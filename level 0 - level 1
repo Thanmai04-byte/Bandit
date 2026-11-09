@@ -1,0 +1,54 @@
+OverTheWire Bandit – Level 0 to Level 1 Report
+1. Objective (Level Goal)
+The objective of this level is to find the password for bandit1.
+The password is stored in a file named readme in the home directory of the bandit0 user.
+We need to connect to the Bandit server using SSH, locate the file, read its contents, and use the password to log in to the next level.
+2. Tools and Commands Used
+Command	Purpose
+ssh	Connect to the remote Bandit server
+ls	List files and directories
+cd	Change the current directory
+cat	Display file contents
+3. Step-by-Step Procedure
+Step 1: Connect to Bandit Level 0
+Open the Kali Linux terminal and enter:
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+Enter the given Bandit Level 0 password when prompted.
+Step 2: Check the files
+After successful login, type:
+ls
+This command displays the files in the home directory.
+We can see a file named:
+readme
+Step 3: Read the file
+Execute:
+cat readme
+This displays the contents of the readme file.
+The output contains the password required for the next level.
+Step 4: Save the password
+Copy the displayed password and save it in your personal notes.
+Step 5: Log in to Bandit Level 1
+Exit the current session:
+exit
+Connect to the next level:
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+Enter the password obtained from the readme file.
+If login is successful, you have completed Level 0 to Level 1.
+4. What I Have Learned
+Through this challenge, I learned:
+1. How to connect to a remote Linux server using SSH.
+2. How to use the ls command to list files.
+3. How to use the cat command to read file contents.
+4. How to locate a file in the home directory.
+5. How to retrieve a password from a file.
+6. How to use the retrieved password to access the next level.
+7. The importance of saving passwords and maintaining notes during cybersecurity challenges.
+5. Practical Knowledge Gained
+- Understood the basic Linux terminal environment.
+- Practised remote login using SSH.
+- Learned basic Linux file navigation and file-reading commands.
+- Understood how authentication works when connecting to another user account.
+6. Conclusion
+I successfully completed OverTheWire Bandit Level 0 to Level 1 by connecting to the remote server using SSH, locating the readme file, and reading its contents using the cat command. I used the retrieved password to log in to Bandit Level 1.
+
+This challenge helped me understand basic Linux commands, SSH connections, and password-based authentication.
